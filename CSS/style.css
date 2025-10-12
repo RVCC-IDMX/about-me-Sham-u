@@ -1,0 +1,46 @@
+body {
+    font-family:"Inter", sans-serif;
+    background-color: #F2A2A2;
+    color: #4962F2;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Lugrasimo", cursive;
+    font-weight: 400;
+    font-size: 40pt;
+
+}
+
+header {
+    text-align: center;
+}
+
+#person {
+    color: #4962F2;
+    border: 3px solid #5079F2;
+    background-color: #F285AD;
+    padding: 2px;
+    text-align: center;
+    font-size:18pt;
+}
+
+#person img {
+    width: 400px;
+}
+
+#bio {
+    text-align: center;
+    font-size: 13pt;
+}
+
+
+footer {
+    color: #4962F2;
+    border: 3px solid #5079F2;
+    background-color: #F285AD;
+    padding: 5px;
+    text-align: center;
+    font-weight: 700;
+
+}
