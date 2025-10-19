@@ -16,6 +16,8 @@ header {
     text-align: center;
 }
 
+/*person section*/
+
 #person {
     color: black;
     border: 3px solid #5079F2;
@@ -29,11 +31,14 @@ header {
     width: 400px;
 }
 
+/*Bio Section*/
+
 #bio {
     text-align: center;
     font-size: 13pt;
 }
 
+/*Hobbies Section*/
 
 #hobbies {
     border-top: 2px dotted #5079F2;
@@ -54,6 +59,23 @@ header {
 }
 
 
+/*Gallery Section*/
+
+#gallery {
+    border:5px solid #5079F2;
+
+}
+
+#gallery img {
+    max-width: 100%;
+}
+
+#gallery figure {
+    text-align: center;
+    color:#363432 ;
+}
+
+/*footer section*/
 
 footer {
     color: #4962F2;
