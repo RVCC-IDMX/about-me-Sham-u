@@ -1,6 +1,6 @@
 body {
     font-family:"Inter", sans-serif;
-    background-color: #F2A2A2;
+    background-color: #E1C8C4;
     color: #4962F2;
 
 }
@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family:"Lugrasimo", cursive;
     font-weight: 400;
     font-size: 40pt;
-
+    text-align: center;
 }
 
 header {
@@ -17,7 +17,7 @@ header {
 }
 
 #person {
-    color: #4962F2;
+    color: black;
     border: 3px solid #5079F2;
     background-color: #F285AD;
     padding: 2px;
@@ -33,6 +33,26 @@ header {
     text-align: center;
     font-size: 13pt;
 }
+
+
+#hobbies {
+    border-top: 2px dotted #5079F2;
+    border-bottom: 2px dotted #5079F2;
+    text-align: center;
+    list-style-position: inside;
+    color: #4962F2;
+}
+
+#hobbies ul li:nth-child(even) {
+    color: #2A2359;
+    font-style: italic;
+}
+
+#hobbies ul li:nth-child(odd) {
+    color: #0061E0;
+    font-style:normal
+}
+
 
 
 footer {
