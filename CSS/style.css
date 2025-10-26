@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+h3 {
+    margin: 0.1em;
+}
+
 header {
     text-align: center;
 }
@@ -41,6 +45,9 @@ header {
 /*Hobbies Section*/
 
 #hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-top: 2px dotted #5079F2;
     text-align: center;
     list-style-position: inside;
@@ -101,4 +108,20 @@ footer {
     text-align: center;
     font-weight: 700;
 
+}
+
+
+@media screen and (min-width: 60em) {
+    figure {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.75rem;
+        margin-left: 2rem;
+    }
 }
