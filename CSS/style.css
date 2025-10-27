@@ -97,6 +97,24 @@ header {
     margin: 0 auto;
 }
 
+/*Dropcap for Literature*/
+
+#lit div p:first-child::first-letter {
+    color: #363432;
+    background-image:radial-gradient(#fff,#E1C8C4) ;
+    float: inline-start;
+    font-size: 2em;
+    padding: .1em;
+    margin-right: .25em;
+    line-height: 1;
+    border:4px outset #363432;
+    font-family: "Lobster", sans-serif;
+    text-shadow: 2px 2px 3px rgba(0, ,0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, ,0, 0, 0.5);
+    border-top-left-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+
+}
 
 /*footer section*/
 
@@ -110,6 +128,7 @@ footer {
 
 }
 
+/*tablet media size*/
 
 @media screen and (min-width: 60em) {
     figure {
@@ -124,4 +143,35 @@ footer {
         font-size: 1.75rem;
         margin-left: 2rem;
     }
+
+    figure img {
+    width: 100%;
+    }
+
+
+    #lit div {
+        max-width: 100%;
+        columns: 40rem;
+    }
 }
+
+
+/*large media size*/
+
+@media screen and (min-width: 100em) {
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #gallery h3 {
+        grid-column: 1/-1;
+    }
+
+    figure {
+        display: block;
+    }
