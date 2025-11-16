@@ -127,6 +127,12 @@ header {
 }
 
 
+/* Contact Form */
+#formElemets {
+    display:grid;
+}
+
+
 /*footer section*/
 
 footer {
