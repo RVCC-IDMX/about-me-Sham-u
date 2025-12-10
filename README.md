@@ -24,8 +24,16 @@ Dropcap background/Contact Form text - #E1C8C4
 Comtact Form background - #333
 
 
-#### Citations
-Add later
+#### Citations (MLA Format)
+
+“Appendix E. Elaborate Description of Stacking Contexts.” Elaborate Description of Stacking Contexts, www.w3.org/TR/CSS22/zindex.html. Accessed 10 Dec. 2025.
+
+
+Blum, Andy, and Andy Blum                           Andy Blum is a front-end developer and Acquia Certified Front-End Specialist.                                        More about Andy. “Understanding & Debugging Stacking Contexts (and the z-Index).” Lullabot, 18 Aug. 2021, www.lullabot.com/articles/understanding-debugging-stacking-contexts.
+
+
+“Z-Index and Stacking Contexts  :   Web.Dev.” Web.Dev, web.dev/learn/css/z-index. Accessed 10 Dec. 2025.
+
 
 
 ##### Updates

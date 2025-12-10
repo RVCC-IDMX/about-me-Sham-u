@@ -150,68 +150,95 @@
 
             </section>
 
-            <article id="lit">
+            <article id="blog">
 
-                <h4>An Excerpt from Dracula </h4>
+                <h4>Stacking Context and Z-index</h4>
 
                 <div>
 
-                    <p>"How these papers have been placed in sequence will be
-                        made manifest in the
-                        reading of them. All needless matters have been
-                        eliminated, so that a
-                        history almost at variance with the possibilities of
-                        later-day belief may
-                        stand forth as simple fact. There is throughout no
-                        statement of past things
-                        wherein memory may err, for all the records chosen are
-                        exactly contemporary,
-                        given from the standpoints and within the range of
-                        knowledge of those who
-                        made them."</p>
+                    <p>Z-index in terms of CSS is the property that sets the
+                        layer order of objects
+                        when displayed in html. The best way to visualize this
+                        concept is looking at a
+                        graph that presents with 3 axis (X, Y, Z). The X axis
+                        determines the horizontal
+                        placement of an object, the Y axis determines the
+                        vertical placement of an
+                        object, and thus this would mean that the Z axis
+                        determines how close or far the
+                        object is from the viewpoint. This adds range or depth
+                        of objects to their
+                        surroundings.</p>
 
-                    <p>"The castle is on the very edge of a terrible precipice.
-                        A
-                        stone falling from
-                        the window would fall a thousand feet without touching
-                        anything! As far as
-                        the eye can reach is a sea of green tree tops, with
-                        occasionally a deep rift
-                        where there is a chasm. Here and there are silver
-                        threads where the rivers
-                        wind in deep gorges through the forests."</p>
+                    <p>In CSS and HTML, the order of objects is usually
+                        considered static by default.
+                        Meaning that the default order of objects follows the
+                        order of how it is
+                        written, so the last line or value takes priority
+                        through the idea of cascade.
+                        However, there are ways to get around the cascade rule
+                        and one of those ways
+                        revolves around the z-index property. Z-index uses
+                        positive or negative integers
+                        to determine the value but if there is no set value it
+                        defaults to auto as its
+                        value. However, this is not the only part that needs to
+                        be clarified. Z-index
+                        does not work by itself because it requires position to
+                        be defined. If no
+                        position is defined, then the object is considered
+                        static and will just follow
+                        normal rules. But with a position defined and a z-index
+                        given an integer, this
+                        allows different elements to move around each other, and
+                        either be seen in front
+                        or behind another object in turn creating something
+                        known as stacking context.
+                        Stacking context can be defined as group of objects that
+                        have a common parent
+                        (such as a background or another object) and move
+                        together on the z-axis via the
+                        Z-index.</p>
 
-                    <p>"I am beginning to feel this nocturnal existence tell on
-                        me. It is destroying
-                        my nerve. I start at my own shadow, and am full of all
-                        sorts of horrible
-                        imaginings. God knows that there is ground for my
-                        terrible fear in this
-                        accursed place! I looked out over the beautiful expanse,
-                        bathed in soft
-                        yellow moonlight till it was almost as light as day."
-                    </p>
-
-                    <p>"The morning of 16 May broke bright and cheerful. The sun
-                        shone warm and
-                        brilliant, and the birds sang sweetly in the trees. The
-                        very air seemed full
-                        of hope and happiness. I felt that the cloud of gloom
-                        which had been hanging
-                        over us for so long was lifting, and that we were about
-                        to enter upon a new
-                        phase of our strange and terrible experience."</p>
-
-                    <p>"We kept on ascending, with occasional periods of quick
-                        descent, but in the
-                        main always ascending. Suddenly, I became conscious of
-                        the fact that the
-                        driver was in the act of pulling up the horses in the
-                        courtyard of a vast
-                        ruined castle, from whose tall black windows came no ray
-                        of light, and whose
-                        broken battlements showed a jagged line against the
-                        moonlit sky."</p>
+                    <p>The practical application of stacking and Z-index comes
+                        together in visual and
+                        artistic choices. For websites it can add visual depth
+                        to seemingly flat
+                        elements on a 2D media. Certain elements that are
+                        controlled via the z-index or
+                        with stacking context would be ones that are created
+                        with composite layers like
+                        those that include opacity or transform tags. Opacity is
+                        the easiest to
+                        understand as it controls how translucence something is
+                        which can help to show
+                        that there are different layers of an object as the top
+                        layer can vary by being
+                        or less translucence to show a lot or very little of the
+                        layers beneath it. The
+                        same concept can be applied with transform and the idea
+                        of creating filters as
+                        filters are another form of stacking context as they can
+                        apply effects to an
+                        object to change or distort but they still work in a
+                        stacking context. Another
+                        area that stacking context exists is within navigation
+                        elements like drop down
+                        menus and overlays. Many modern navigation elements like
+                        drop down menus open an
+                        element that appears over the original field, this
+                        element appears because when
+                        clicked the z-index for the drop-down menu takes
+                        priority over the original page
+                        and shows a popout or an extra layer that displays the
+                        options that take
+                        precedent in display over the main content of a page.
+                        These are just a few of
+                        the applications of Z-index in relation to stacking
+                        context, the topic can go
+                        even further when other elements are added such as
+                        JavaScript to improve
+                        creation, design and further ones creative choices.</p>
 
                 </div>
 

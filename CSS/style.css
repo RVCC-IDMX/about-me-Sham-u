@@ -86,24 +86,25 @@ header {
     color:#FFFFFF ;
 }
 
-/*Literature*/
+/*Blog*/
 
-#lit {
+#blog {
     color: #FFFFFF;
     text-align: center;
     font-size:14pt;
 }
 
-#lit div {
+#blog div {
     padding: 1rem;
     font-weight: 400;
-    max-width: 20rem;
+    max-width: 30rem;
     margin: 0 auto;
+    border-top: 2px dotted #B4BEC9;
 }
 
-/*Dropcap for Literature*/
+/*Dropcap for Blog*/
 
-#lit div p:first-child::first-letter {
+#blog div p:first-child::first-letter {
     color: #363432;
     background-image:radial-gradient(#fff,#E1C8C4) ;
     float: inline-start;
