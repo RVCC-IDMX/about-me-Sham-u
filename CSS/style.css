@@ -121,6 +121,47 @@ header {
 
 }
 
+/*Stacking Context and Z-index example */
+
+#blog-example {
+    padding-bottom: 5rem;
+}
+
+.block1,
+.block2,
+.block3 {
+    width: 30rem;
+    height: 6.25rem;
+    margin: 0 auto;
+    font-size: 14pt;
+    color: #002333;
+    padding: 1rem;
+
+}
+
+.block1 {
+    background: #fffdd0;
+    position: relative;
+    z-index: 2;
+    opacity: .7;
+    width: 21rem;
+}
+
+.block2 {
+    background: #ff9a8a;
+    position: relative;
+    z-index: 0;
+    margin-top: -3rem;
+}
+
+.block3 {
+    background: #159A9C;
+    position: relative;
+    z-index: 1;
+    width: 10rem;
+    margin-top: -11rem;
+}
+
 /*Video Section*/
 
 #myVideo {

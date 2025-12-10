@@ -240,9 +240,26 @@
                         JavaScript to improve
                         creation, design and further ones creative choices.</p>
 
+                    <p>Below is a small visual example. Cascade order would mean
+                        that block 3 should be in front of the other blocks, but
+                        do to Z-index that is not the case. The Z-index for
+                        block 1 is set to 2 to be in front, while block 2 is set
+                        to 0 to be behind both block 1 and block 3. Block 3 is
+                        set to 1 so that it is in front of block 2 but behind
+                        block 1. I also made block 1 70% opaque to display the
+                        stacking context of the 3 blocks by being able to see
+                        below block 1. </p>
+
                 </div>
 
             </article>
+
+            <section id="blog-example">
+                <div class="block1">block 1</div>
+                <div class="block2">block 2</div>
+                <div class="block3">block 3</div>
+
+            </section>
 
             <section id="myVideo">
                 <h5> A Short Video: </h5>
