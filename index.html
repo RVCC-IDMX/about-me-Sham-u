@@ -9,6 +9,7 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
 
     <head>
 
@@ -20,15 +21,22 @@
     <body>
         <header>
             <nav class="navbar">
-                <div class="logo"> <img src="img/logo-96X96.svg"
-                        alt="Blue Origami Bird Logo">
+                <div class="logo"> <img src="img/android-icon-96x96.png"
+                        alt="SRB logo">
                     <h1>Web Dev 1 </h1>
                 </div>
+
+                <!--
+                <label class="nav-menu">
+                    <input type="checkbox">
+                </label>
+                -->
+
                 <div class="navbar-links">
                     <ul>
                         <li><a href="#bio">Bio</a></li>
                         <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#lit">Blog</a></li>
+                        <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contact Me</a></li>
                     </ul>
                 </div>
@@ -52,22 +60,36 @@
                 <h2>Biography: </h2>
 
                 <div>
-                    <p>I want to be... </p>
+                    <p>My name is Sam Buccarelli and I am Virginia Tech Graduate
+                        and current RVCC Student. </p>
 
-                    <p> Be able to find a job in this market. </p>
+                    <p> I graduated with a degree in Human Nutrition Food and
+                        Exercise. I am currently persuing a Computer Support
+                        Certificate. </p>
 
-                    <p> What I enjoy doing is... </p>
+                    <p> I have always enjoyed working with computers and have a
+                        good amount experience such as building my own computer
+                        and helping friends with bios and boot drive issues.
+                    </p>
 
-                    <p> Hanging out with my dogs, playing games, and learning
-                        new skils or news. </p>
+                    <p> My hope is to be able to use these skills along with the
+                        knowledge that I have learned getting my degree to make
+                        myself standout and display a wealth of knowledge in the
+                        job market. As well as unite work with topics and
+                        interests I am passionate about. </p>
 
-                    <p> My favorite place to work is...</p>
+                    <p> A few topics I have reserached such as different diets
+                        and the affects that each have non alcoholic fatty liver
+                        disease and using In-silico analysis to identify
+                        pathogenic variants in the human genome. </p>
 
-                    <p>In my room where I have my desktop and multiple monitor
-                        setup to be able to work
-                        and watch football or hockey.</p>
+                    <p>Reserach has always been a major intrest to me and the
+                        hunt to find out the whats and the whys of the world.
+                        But there is more to me than just school and reserach.
+                    </p>
 
-                    <p>Now on Netlify!</p>
+                    <p>Below are a few of my hobbies or interests that I like to
+                        do in my spare time. </p>
 
                 </div>
 
@@ -78,8 +100,9 @@
                 <h3>Hobbies: </h3>
 
                 <ul>
-                    <li>Playing with my dogs</li>
-                    <li>Listening and discovering new music</li>
+                    <li>Playing with my two dogs</li>
+                    <li>Listening and discovering new music such as this song
+                        from Greyhaven </li>
 
                     <iframe data-testid="embed-iframe"
                         src="https://open.spotify.com/embed/track/453dQe6RA1HZlQlEYorVbx?utm_source=generator"
@@ -94,6 +117,7 @@
                     <li>Reading</li>
                     <li>Shows/movies</li>
                     <li>Leaning history/random trivia</li>
+                    <li>Photgraphy, primarily landscape shots</li>
                     <li>etc.</li>
                 </ul>
             </section>
@@ -133,72 +157,116 @@
 
             </section>
 
-            <article id="lit">
+            <article id="blog">
 
-                <h4>An Excerpt from Dracula </h4>
+                <h4>Stacking Context and Z-index</h4>
 
                 <div>
 
-                    <p>"How these papers have been placed in sequence will be
-                        made manifest in the
-                        reading of them. All needless matters have been
-                        eliminated, so that a
-                        history almost at variance with the possibilities of
-                        later-day belief may
-                        stand forth as simple fact. There is throughout no
-                        statement of past things
-                        wherein memory may err, for all the records chosen are
-                        exactly contemporary,
-                        given from the standpoints and within the range of
-                        knowledge of those who
-                        made them."</p>
+                    <p>Z-index in terms of CSS is the property that sets the
+                        layer order of objects
+                        when displayed in html. The best way to visualize this
+                        concept is looking at a
+                        graph that presents with 3 axis (X, Y, Z). The X axis
+                        determines the horizontal
+                        placement of an object, the Y axis determines the
+                        vertical placement of an
+                        object, and thus this would mean that the Z axis
+                        determines how close or far the
+                        object is from the viewpoint. This adds range or depth
+                        of objects to their
+                        surroundings.</p>
 
-                    <p>"The castle is on the very edge of a terrible precipice.
-                        A
-                        stone falling from
-                        the window would fall a thousand feet without touching
-                        anything! As far as
-                        the eye can reach is a sea of green tree tops, with
-                        occasionally a deep rift
-                        where there is a chasm. Here and there are silver
-                        threads where the rivers
-                        wind in deep gorges through the forests."</p>
+                    <p>In CSS and HTML, the order of objects is usually
+                        considered static by default.
+                        Meaning that the default order of objects follows the
+                        order of how it is
+                        written, so the last line or value takes priority
+                        through the idea of cascade.
+                        However, there are ways to get around the cascade rule
+                        and one of those ways
+                        revolves around the z-index property. Z-index uses
+                        positive or negative integers
+                        to determine the value but if there is no set value it
+                        defaults to auto as its
+                        value. However, this is not the only part that needs to
+                        be clarified. Z-index
+                        does not work by itself because it requires position to
+                        be defined. If no
+                        position is defined, then the object is considered
+                        static and will just follow
+                        normal rules. But with a position defined and a z-index
+                        given an integer, this
+                        allows different elements to move around each other, and
+                        either be seen in front
+                        or behind another object in turn creating something
+                        known as stacking context.
+                        Stacking context can be defined as group of objects that
+                        have a common parent
+                        (such as a background or another object) and move
+                        together on the z-axis via the
+                        Z-index.</p>
 
-                    <p>"I am beginning to feel this nocturnal existence tell on
-                        me. It is destroying
-                        my nerve. I start at my own shadow, and am full of all
-                        sorts of horrible
-                        imaginings. God knows that there is ground for my
-                        terrible fear in this
-                        accursed place! I looked out over the beautiful expanse,
-                        bathed in soft
-                        yellow moonlight till it was almost as light as day."
-                    </p>
+                    <p>The practical application of stacking and Z-index comes
+                        together in visual and
+                        artistic choices. For websites it can add visual depth
+                        to seemingly flat
+                        elements on a 2D media. Certain elements that are
+                        controlled via the z-index or
+                        with stacking context would be ones that are created
+                        with composite layers like
+                        those that include opacity or transform tags. Opacity is
+                        the easiest to
+                        understand as it controls how translucence something is
+                        which can help to show
+                        that there are different layers of an object as the top
+                        layer can vary by being
+                        or less translucence to show a lot or very little of the
+                        layers beneath it. The
+                        same concept can be applied with transform and the idea
+                        of creating filters as
+                        filters are another form of stacking context as they can
+                        apply effects to an
+                        object to change or distort but they still work in a
+                        stacking context. Another
+                        area that stacking context exists is within navigation
+                        elements like drop down
+                        menus and overlays. Many modern navigation elements like
+                        drop down menus open an
+                        element that appears over the original field, this
+                        element appears because when
+                        clicked the z-index for the drop-down menu takes
+                        priority over the original page
+                        and shows a popout or an extra layer that displays the
+                        options that take
+                        precedent in display over the main content of a page.
+                        These are just a few of
+                        the applications of Z-index in relation to stacking
+                        context, the topic can go
+                        even further when other elements are added such as
+                        JavaScript to improve
+                        creation, design and further ones creative choices.</p>
 
-                    <p>"The morning of 16 May broke bright and cheerful. The sun
-                        shone warm and
-                        brilliant, and the birds sang sweetly in the trees. The
-                        very air seemed full
-                        of hope and happiness. I felt that the cloud of gloom
-                        which had been hanging
-                        over us for so long was lifting, and that we were about
-                        to enter upon a new
-                        phase of our strange and terrible experience."</p>
-
-                    <p>"We kept on ascending, with occasional periods of quick
-                        descent, but in the
-                        main always ascending. Suddenly, I became conscious of
-                        the fact that the
-                        driver was in the act of pulling up the horses in the
-                        courtyard of a vast
-                        ruined castle, from whose tall black windows came no ray
-                        of light, and whose
-                        broken battlements showed a jagged line against the
-                        moonlit sky."</p>
+                    <p>Below is a small visual example. Cascade order would mean
+                        that block 3 should be in front of the other blocks, but
+                        do to Z-index that is not the case. The Z-index for
+                        block 1 is set to 2 to be in front, while block 2 is set
+                        to 0 to be behind both block 1 and block 3. Block 3 is
+                        set to 1 so that it is in front of block 2 but behind
+                        block 1. I also made block 1 70% opaque to display the
+                        stacking context of the 3 blocks by being able to see
+                        below block 1. </p>
 
                 </div>
 
             </article>
+
+            <section id="blog-example">
+                <div class="block1">block 1</div>
+                <div class="block2">block 2</div>
+                <div class="block3">block 3</div>
+
+            </section>
 
             <section id="myVideo">
                 <h5> A Short Video: </h5>
@@ -300,7 +368,8 @@
 
             <footer>
 
-                ©2025-Sam Buccarelli
+                https://github.com/RVCC-IDMX/about-me-Sham-u ©2025-Sam
+                Buccarelli
 
             </footer>
         </main>

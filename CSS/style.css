@@ -1,7 +1,10 @@
+
+/*skeleton work of the page including body and all the headers */
+
 body {
     font-family:"Inter", sans-serif;
-    background-color: #E1C8C4;
-    color: #4962F2;
+    background-color: #002333;
+    color: #FFFFFF;
 
 }
 
@@ -17,7 +20,7 @@ h3 {
 }
 
 h6 {
-    color: #363432;
+    color: #FFFFFF;
 }
 
 header {
@@ -28,8 +31,8 @@ header {
 
 #person {
     color: black;
-    border: 3px solid #5079F2;
-    background-color: #F285AD;
+    border: 3px solid #B4BEC9;
+    background-color: #159A9C;
     padding: 2px;
     text-align: center;
     font-size:18pt;
@@ -52,19 +55,19 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 2px dotted #5079F2;
+    border-top: 2px dotted #B4BEC9;
     text-align: center;
     list-style-position: inside;
-    color: #4962F2;
+    color: #FFFFFF;
 }
 
 #hobbies ul li:nth-child(even) {
-    color: #2A2359;
+    color: #FFFFFF;
     font-style: italic;
 }
 
 #hobbies ul li:nth-child(odd) {
-    color: #0061E0;
+    color: #159A9C;
     font-style:normal
 }
 
@@ -72,7 +75,7 @@ header {
 /*Gallery Section*/
 
 #gallery {
-    border:5px solid #5079F2;
+    border:5px solid #B4BEC9;
     padding: 5px;
 
 }
@@ -83,27 +86,28 @@ header {
 
 #gallery figure {
     text-align: center;
-    color:#363432 ;
+    color:#FFFFFF ;
 }
 
-/*Literature*/
+/*Blog*/
 
-#lit {
-    color: #363432;
+#blog {
+    color: #FFFFFF;
     text-align: center;
     font-size:14pt;
 }
 
-#lit div {
+#blog div {
     padding: 1rem;
     font-weight: 400;
-    max-width: 20rem;
+    max-width: 30rem;
     margin: 0 auto;
+    border-top: 2px dotted #B4BEC9;
 }
 
-/*Dropcap for Literature*/
+/*Dropcap for Blog*/
 
-#lit div p:first-child::first-letter {
+#blog div p:first-child::first-letter {
     color: #363432;
     background-image:radial-gradient(#fff,#E1C8C4) ;
     float: inline-start;
@@ -120,15 +124,56 @@ header {
 
 }
 
+/*Stacking Context and Z-index example */
+
+#blog-example {
+    padding-bottom: 5rem;
+}
+
+.block1,
+.block2,
+.block3 {
+    width: 30rem;
+    height: 6.25rem;
+    margin: 0 auto;
+    font-size: 14pt;
+    color: #002333;
+    padding: 1rem;
+
+}
+
+.block1 {
+    background: #fffdd0;
+    position: relative;
+    z-index: 2;
+    opacity: .7;
+    width: 21rem;
+}
+
+.block2 {
+    background: #ff9a8a;
+    position: relative;
+    z-index: 0;
+    margin-top: -3rem;
+}
+
+.block3 {
+    background: #159A9C;
+    position: relative;
+    z-index: 1;
+    width: 10rem;
+    margin-top: -11rem;
+}
+
 /*Video Section*/
 
 #myVideo {
     text-align: center;
-    border-top:5px solid #5079F2;
+    border-top:5px solid #B4BEC9;
     padding: 0%;
-    color: #363432;
+    color: #FFFFFF;
     font-size:14pt;
-    border-bottom:5px solid #5079F2;
+    border-bottom:5px solid #B4BEC9;
 }
 
 
@@ -144,7 +189,7 @@ header {
     padding: 1rem;
     max-width: 600px;
     margin: 2rem auto;
-    color: #363432;
+    color: #B4BEC9;
 }
 
 fieldset{
@@ -185,9 +230,9 @@ legend {
 /*footer section*/
 
 footer {
-    color: #4962F2;
-    border: 3px solid #5079F2;
-    background-color: #F285AD;
+    color: #FFFFFF;
+    border: 3px solid #B4BEC9;
+    background-color: #159A9C;
     padding: 5px;
     text-align: center;
     font-weight: 700;
