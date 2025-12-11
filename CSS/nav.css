@@ -30,6 +30,7 @@ main {
     flex-direction: column;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 
@@ -75,6 +76,7 @@ main {
     letter-spacing: 1.5px;
     text-decoration: none;
     display: inline-block;
+
 }
 
 .navbar-links a:hover,
@@ -84,6 +86,48 @@ main {
     outline: none;
 }
 
+/* I am commenting out the attempt at the Hamburger style nav bar
+I was not getting it to work and not understanding the videos or other code explainations
+as the nav menu would never appear even while the nav bar was checked when inspected.
+So rather than have a broken menu with no nav, I commented out the code to at least have the original
+nav menu and nav bar attached */
+
+
+/*
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    width: max-content;
+    position: absolute;
+    top: 0;
+    right: .4rem;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.nav-menu::before,
+.nav-menu::after,
+.nav-menu input {
+    content: "";
+    width: 3rem;
+    height: .5rem;
+    background-color: #fff;
+    border-radius: 99rem;
+}
+
+.nav-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
+
+.nav-menu input:checked ~ .navbar li {
+    display:block ;
+}
+*/
 
 
 /*
