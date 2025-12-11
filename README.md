@@ -8,8 +8,6 @@ This project is the acculmation of a semester of learning about web development 
 
 The finished project can alos be found on Netlify via the [![Netlify Status](https://api.netlify.com/api/v1/badges/6f207eab-85dc-48ef-878b-812ca7355b6a/deploy-status)](https://app.netlify.com/projects/about-me-sham-u/deploys)
 
-/* Done before it was switched to final branch/merged double check that this link is correct before turning it in + add GitHub to footer */
-
 As previously stated this project is acculmation of a semester so it was broken down in parts. The top starts with the Nav bar with the  that allows for ease of use to get to a specific section of the website but also is used as a legend for what is to come. From there it leads into a small graphic of myself, a small biography and a small list of hobbies. After those sections, an image gallery was added to show interests and hobbies but also to practice adding pictures and media into a website along with how to style them. Beyond that is a blog post about stacking context and z-index that accompanies a visual component to provide more context and practice the concept. Also attached is the midterm that was made for this course as well, which dipicts another website that was made in regards to my photography. The visual components of the website ends with a contact us form where a message can be left along with a footer to close out the website that also links to GitHub.
 
 ### Color Schemes
